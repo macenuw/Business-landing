@@ -1,0 +1,130 @@
+.header {
+  margin-bottom: 105px;
+
+  @media (max-width: 760px) {
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 760px) {
+      padding: 0 30px;
+    }
+
+    @media (max-width: 460px) {
+      padding: 0px;
+    }
+  }
+
+  &__menu-btn-inner {
+    display: none;
+
+    @media (max-width: 760px) {
+      display: block;
+    }
+  }
+
+  &__menu-btn {
+    width: 24px;
+    height: 20px;
+    border: none;
+    position: relative;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 1);
+    cursor: pointer;
+  }
+
+  &__menu-span {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 2px;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    transition: .3s;
+
+    @media (max-width: 760px) {
+      position: absolute;
+      transform: translateY(-800px);
+    }
+
+    &.active {
+      left: calc(50% - 129px);
+      transform: translateY(0);
+
+      @media (max-width: 460px) {
+        left: calc(50% - 100px);
+      }
+    }
+  }
+
+  &__btn {
+    padding: 8px 28px;
+    border: 1px solid $orange;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    @media (max-width: 460px) {
+      padding: 8px 18px;
+    }
+  }
+
+  &__sing-in {
+    background-color: transparent;
+    color: $orange;
+    transition: .3s;
+    margin-right: 20px;
+
+    @media (max-width: 460px) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: white;
+      background-color: $orange;
+    }
+  }
+
+  &__sing-up {
+    background-color: $orange;
+    color: white;
+
+    &:hover {
+      background-color: transparent;
+      color: $orange;
+    }
+  }
+}

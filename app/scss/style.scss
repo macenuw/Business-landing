@@ -1,3 +1,23 @@
-body{
-    background-color: red;
-}
+@import'global/reset';
+@import'global/vars';
+@import'global/fonts';
+@import'global/libs';
+@import'global/global';
+
+
+// BLOCK
+@import'./block/header.scss';
+@import'./block/top-section.scss';
+@import'./block/choice.scss';
+@import'./block/traffic.scss';
+@import'./block/simple.scss';
+@import'./block/project.scss';
+@import'./block/business.scss';
+@import'./block/help.scss';
+@import'./block/mail.scss';
+@import'./block/footer.scss';
+
+// COMPONENTS
+@import'./components/menu.scss';
+@import'./components/partners.scss';
+@import'./components/card.scss';

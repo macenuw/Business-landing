@@ -1,0 +1,108 @@
+.mail {
+  padding: 50px 0;
+  background-image: url(../images/mail-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    background: rgba(60, 62, 125, 0.19);
+    backdrop-filter: blur(134px);
+    border-radius: 5px;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: $orange;
+    margin-bottom: 20px;
+
+    @media (max-width:650px) {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $fiol;
+    max-width: 396px;
+    margin-bottom: 20px;
+
+    @media (max-width:650px) {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media (max-width:650px) {
+      max-width: 80%;
+    }
+  }
+
+  &__input {
+    padding: 18px 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px 0 0 5px;
+    border: none;
+
+    @media (max-width:650px) {
+      padding: 8px 6px;
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: white;
+      opacity: 0.2;
+    }
+  }
+
+  &__btn {
+    border-radius: 0 5px 5px 0;
+    padding: 16px 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    min-width: 128px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: $orange;
+    border: 1px solid $orange;
+    box-shadow: none;
+
+    @media (max-width:650px) {
+      padding: 6px 6px;
+      min-width: 80px;
+      font-size: 10px;
+    }
+  }
+
+  &__subtext {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $fiol;
+
+    @media (max-width:650px) {
+      font-size: 12px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+}

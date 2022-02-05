@@ -1,0 +1,144 @@
+.top-section {
+  background-image: url(../images/top-section-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 500px);
+
+  @media (max-width: 580px) {
+    background-position-x: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 90px;
+
+    @media (max-width: 580px) {
+      align-items: center;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__title {
+    color: $tifany;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 50px;
+    max-width: 530px;
+    width: 100%;
+    margin-bottom: 19px;
+
+    @media (max-width: 580px) {
+      font-size: 36px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: $fiol;
+    margin-bottom: 40px;
+  }
+
+  &__links {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    min-width: 157px;
+    padding: 14px 28px;
+    border: 1px solid $orange;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+
+    @media (max-width: 580px) {
+      min-width: 140px;
+      padding: 14px;
+    }
+
+    &:first-child {
+      background-color: $orange;
+      color: white;
+      margin-right: 20px;
+
+      &:hover {
+        background-color: transparent;
+        color: $orange;
+      }
+    }
+
+    &:last-child {
+      background-color: transparent;
+      color: $orange;
+      transition: .3s;
+
+      &:hover {
+        color: white;
+        background-color: $orange;
+      }
+    }
+  }
+
+  &__video-inner {
+    display: flex;
+
+    @media (max-width: 580px) {
+      flex-direction: column;
+    }
+  }
+
+  &__video {
+    width: 140px;
+    height: 80px;
+    background: #361C5D;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+
+    @media (max-width: 580px) {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__play {
+    background-image: url(../images/play.png);
+    background-position: center;
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: $fiol;
+    max-width: 375px;
+
+    @media (max-width: 580px) {
+      max-width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  &__subtext {
+    display: block;
+    padding-top: 6px;
+  }
+}
